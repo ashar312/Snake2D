@@ -117,8 +117,11 @@ void crash() {
 
 	for (int i = 0; i < snakelength; i++)
 	{
-		if (posx[i] == pos2x[i] && pos2y[i] == posy[i])
-			gameover = true;
+		for (int j = 0; j < snakelength2; j++)
+		{
+			if (posx[i] == pos2x[j] && posy[i] == pos2y[j])
+				gameover = true;
+		}
 	}
 	/*for (int i = 0; i < snakelength2; i++)
 	{
