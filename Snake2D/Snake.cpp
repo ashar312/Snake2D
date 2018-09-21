@@ -71,7 +71,7 @@ void keyboard(int key, int, int) {
 		if (sdirection != LEFT)
 			sdirection = RIGHT;
 		break;
-
+		
 	case GLUT_KEY_UP:
 		if (sdirection != DOWN)
 			sdirection = UP;

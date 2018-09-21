@@ -89,7 +89,7 @@ void drawsnake2() {
 		if (i == 0)
 			glColor3f(0.0, 1.0, 0.0);
 		else
-			glColor3f(0.0, 0.0, 1.0);
+			glColor3f(1.0, 0.65, 0.0);
 		glRectd(pos2x[i], pos2y[i], pos2x[i] + 1, pos2y[i] + 1);
 	}
 
@@ -120,11 +120,11 @@ void crash() {
 		if (posx[i] == pos2x[i] && pos2y[i] == posy[i])
 			gameover = true;
 	}
-	for (int i = 0; i < snakelength2; i++)
+	/*for (int i = 0; i < snakelength2; i++)
 	{
 		if (posx[i] == pos2x[i] && pos2y[i] == posy[i])
 			gameover = true;
-	}
+	}*/
 
 }
 
